@@ -1264,7 +1264,7 @@ ul.magictabs{padding:0}
 .price-to{margin:0}
 .price-to .price-label{font-weight:bold;white-space:nowrap}
 /* Price notice next to the options */
-.price-notice{padding-left:10px;color:#999}
+.price-notice{padding-left:10px;color:#999;display: none;}
 .price-notice .price{font-weight:bold;color:#2f2f2f}
 /* Price as configured */
 .price-as-configured{margin:0}
@@ -1398,11 +1398,11 @@ ul.magictabs{padding:0}
 .product-options dd select{width:99%;}
 .product-options dd .multiselect option{border-bottom:1px dotted #d9e5ee;padding:2px 4px}
 .product-options ul.options-list{margin-right:5px}
-.product-options ul.options-list li{line-height:1.5;padding:2px 0}
-.product-options ul.options-list input.radio{float:left;margin-top:3px}
+.product-options ul.options-list li{line-height:1.5;padding:2px 0;display: inline-block;width: 20%;}
+.product-options ul.options-list input.radio{float:left;margin-top:3px;display: none;}
 .product-options ul.options-list input.checkbox{float:left;margin-top:3px}
-.product-options ul.options-list .label{display:block;margin-left:18px}
-.product-options ul.options-list label{font-weight:normal}
+.product-options ul.options-list .label{display:inline-block;width:100%}
+.product-options ul.options-list label{font-weight: normal;color: #333;border: 1px solid #ddd;padding: 4px 0;width: 100%;}
 .product-options ul.validation-failed{padding:0 7px}
 .product-options p.note{margin:0;font-size:11px}
 .product-options p.required{text-align:left;clear: both;}
@@ -2087,13 +2087,11 @@ ul.magictabs{padding:0}
 .swatch-link.has-image img {position: absolute;top: 0;left: 0;}
 .swatch-label {border: 1px solid #fff;margin: 0;white-space: nowrap;}
 .configurable-swatch-list {clear: both;}
-.configurable-swatch-list .swatch-link{border: 1px solid #ddd;}
-.configurable-swatch-list .swatch-link:hover {background: #ff4cc8;color: #fff;border-color: #ff4cc8;}
 .products-grid .configurable-swatch-list li, .products-list .configurable-swatch-list li {border: 0;display: inline-block;float: none;margin: 0;vertical-align: top;}
 .configurable-swatch-list .not-available .x {display: block;}
 .configurable-swatch-list .not-available .swatch-link {border-color: #ededed;position: relative;}
 .configurable-swatch-list .not-available .swatch-link.has-image img {opacity: 0.4;filter: alpha(opacity=40);}
-.configurable-swatch-list .not-available .swatch-label {color: #aaa;background: #fff;border: 0;}
+.configurable-swatch-list .not-available .swatch-label {color: #aaa;background: #fff;}
 .configurable-swatch-list .wide-swatch .swatch-label {padding: 0 6px;}
 .configurable-swatch-list .not-available a:focus {outline: 0;}
 .category-products-grid .swatch-link{margin:0;}
@@ -2129,7 +2127,7 @@ ul.magictabs{padding:0}
 .configurable-swatch-box .validation-advice {margin: 0 0 5px;background: #df280a;padding: 2px 5px !important;font-weight: bold; color: #fff !important;float: left;display: block;border-radius: 3px;}
 /* CUSTOM */
 .availability.out-of-stock span {color: #a0a0a0;}
-.product-view .product-options .swatch-view,.product-view .product-options .option-view{float: left;margin-right: 6%;padding: 0; width: 100%;}
+.product-view .product-options .swatch-view,.product-view .product-options .option-view{float: left;margin-right: 6%;padding: 0; width: 47%;}
 .product-view .product-options .swatch-view:last-child, .product-view .product-options .option-view:last-child { margin-right: 0;}
 .product-view .product-options .swatch-attr {float: none;display: block;clear: both; border: 0;}
 .product-view .product-options .swatch-attr label,
@@ -2140,5 +2138,4 @@ ul.magictabs{padding:0}
 .product-view .product-options .select-label {display: none;}
 .product-view .add-to-cart button.out-of-stock {background-position: -80px -362px;cursor: default;}
 .product-view .product-options .swatch-link.has-image img {height: 100%; width: 100%;}
-.product-view .product-options .configurable-swatch-list li{ display: inline-block;vertical-align: middle;width: 20%;text-align: center;}
-
+.product-view .product-options .configurable-swatch-list li{ display: inline-block;vertical-align: middle;}
