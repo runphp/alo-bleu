@@ -1264,7 +1264,7 @@ ul.magictabs{padding:0}
 .price-to{margin:0}
 .price-to .price-label{font-weight:bold;white-space:nowrap}
 /* Price notice next to the options */
-.price-notice{padding-left:10px;color:#999}
+.price-notice{padding-left:10px;color:#999;display: none;}
 .price-notice .price{font-weight:bold;color:#2f2f2f}
 /* Price as configured */
 .price-as-configured{margin:0}
@@ -1398,11 +1398,12 @@ ul.magictabs{padding:0}
 .product-options dd select{width:99%;}
 .product-options dd .multiselect option{border-bottom:1px dotted #d9e5ee;padding:2px 4px}
 .product-options ul.options-list{margin-right:5px}
-.product-options ul.options-list li{line-height:1.5;padding:2px 0}
-.product-options ul.options-list input.radio{float:left;margin-top:3px}
+.product-options ul.options-list li{line-height:1.5;padding:2px 0;display: inline-block;width: 20%;}
+.product-options ul.options-list input.radio{float:left;margin-top:3px;display: none;}
 .product-options ul.options-list input.checkbox{float:left;margin-top:3px}
-.product-options ul.options-list .label{display:block;margin-left:18px}
-.product-options ul.options-list label{font-weight:normal}
+.product-options ul.options-list .label{display:inline-block;width:100%}
+.product-options ul.options-list label{font-weight: normal;color: #333;border: 1px solid #ddd;padding: 4px 0;width: 100%;}
+.product-options ul.options-list label:hover, .product-options ul.options-list label:focus, .product-options ul.options-list label:active{background: #ff4cc8;color: #fff;border-color: #ff4cc8;}
 .product-options ul.validation-failed{padding:0 7px}
 .product-options p.note{margin:0;font-size:11px}
 .product-options p.required{text-align:left;clear: both;}
@@ -2139,4 +2140,3 @@ ul.magictabs{padding:0}
 .product-view .add-to-cart button.out-of-stock {background-position: -80px -362px;cursor: default;}
 .product-view .product-options .swatch-link.has-image img {height: 100%; width: 100%;}
 .product-view .product-options .configurable-swatch-list li{ display: inline-block;vertical-align: middle;}
-
