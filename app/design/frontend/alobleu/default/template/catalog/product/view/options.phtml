@@ -125,6 +125,9 @@
                             if (typeof configOptions[element.getValue()] != 'undefined') {
                                 curConfig = configOptions[element.getValue()];
                             }
+                            element.next('span').select('label')[0].addClassName('selected');
+                        } else {
+                            element.next('span').select('label')[0].removeClassName('selected');
                         }
                     } else if(element.hasClassName('datetime-picker') && !skipIds.include(optionId)) {
                         dateSelected = true;
