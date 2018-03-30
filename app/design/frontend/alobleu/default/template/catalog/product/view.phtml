@@ -46,12 +46,12 @@
                 <input type="hidden" name="product" value="<?php echo $_product->getId() ?>" />
                 <input type="hidden" name="related_product" id="related-products-field" value="" />
             </div>
-            <div class="product-img-box clearfix col-md-5 col-sm-5 col-xs-12">
+            <div class="product-img-box clearfix col-md-6 col-sm-5 col-xs-12">
 				<div class="product-img-content">
 					<?php echo $this->getChildHtml('media') ?>
 				</div>
             </div>
-            <div class="product-shop col-md-7 col-sm-7 col-xs-12">
+            <div class="product-shop col-md-6 col-sm-7 col-xs-12">
 				<div class="product-shop-content">
 					<div class="product-name">
 						<h1><?php echo $_helper->productAttribute($_product, $_product->getName(), 'name') ?></h1>
