@@ -516,11 +516,15 @@ tr.summary-details-excluded{font-style:italic}
 .catalog-product-view .header-container-fixed{z-index: 99999;}
 .header-container-fixed .header .top-form-language .lang-switcher:hover .dropdown-switcher, .header-container-fixed .header .currency_top .currency-switcher:hover .dropdown-switcher, .header-container-fixed .header .header-setting .settting-switcher:hover .dropdown-switcher, .header-container-fixed .header .header-search .search-switcher:hover .dropdown-switcher {top: 56px;}
 .header-container-fixed .magicmenu .nav-desktop .level0.ext .level-top::before{bottom: 16px;}
-.header-logo{max-width: 240px;}
+.header .header-content .content-logo{position: relative;min-height: 1px;  padding-right: 15px;padding-left: 15px;float: left;}
+.header-logo{max-width: 240px; margin:auto;}
+.header-logo img{ margin:auto;}
 .header .logo{margin:0;padding: 0px;text-decoration:none!important;outline:none;display: block;position: relative;z-index: 2;}
 .header .logo .logo1{padding: 0px;display: block;}
 .header .logo strong{position:absolute;top:-999em;left:-999em;width:0;height:0;font-size:0;line-height:0;text-indent:-999em;overflow:hidden}
 .header h1.logo{margin:0;padding: 0;}
+.header .main-header-right{position: absolute;right: 0;clear: both;float: right;line-height: 45px;z-index: 1;}
+.header .custom-menu .magicmenu{ text-align:left;}
 .main-header-top-link li { display: inline;float: left;}
 .main-header-top-link li > a {border-right: 1px solid #e4e4e4;padding: 0 5px;}
 .main-header-top-link li:first-child > a { padding-left: 0;}
@@ -601,7 +605,8 @@ tr.summary-details-excluded{font-style:italic}
 .top-links{padding-left: 18px;margin: 0;}
 .top-links .or{padding:15px 10px;}
 .header .links{margin:0px;padding:0px}
-.header .links li a{padding: 5px 0;display: block;position: relative;font-size: 12px;text-transform: uppercase;line-height: normal;}
+.header .links li{float: right;}
+.header .links li a{display: block;position: relative;font-size: 12px;text-transform: uppercase;line-height: 50px;}
 .header .links li a:hover,.header .links li a:focus,.currency_top li a:hover,.currency_top li a:focus{}
 .header .links li.last{padding-right: 0;}
 .header-container .top-container{clear:both;padding:5px 10px 0 12px;text-align:right}
